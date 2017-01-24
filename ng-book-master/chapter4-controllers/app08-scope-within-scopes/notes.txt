@@ -1,0 +1,7 @@
+There is one exception in the case that a scope is created inside of a directive, this is called the isolate scope.
+
+With that one exception, all scopes are created with prototypal inheritance, meaning that they have access to their parent scopes. If we are familiar with object-oriented programming, this behavior should look familiar.
+
+It is a best practice to keep our controllers as slim as possible. It’s bad practice to do any DOM interaction or data manipulating inside the controller.
+
+As we previously mentioned, $scopes have the ability to watch for changes of a particular property and react to the change.

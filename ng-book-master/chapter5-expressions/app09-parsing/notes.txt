@@ -1,0 +1,7 @@
+Although your angular app will run parse for you automatically when running the $digest loop, sometimes it’s useful to parse an angular expression manually.
+
+
+Expressions are evaluated by the $parse service, a service that is baked into AngularJS core, so we can get access to the raw functions that are actually run to evaluate expressions using the $parse service.
+
+
+To manually parse an expression, we can inject the $parse service into a controller and call the service to do the parsing for us. For instance, if we have an input box in our page that’s bound to the expr variable, like so:
